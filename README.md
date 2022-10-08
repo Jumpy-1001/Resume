@@ -33,6 +33,13 @@ To create a production version of your app:
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Deploying to GitHub Pages
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+svelte.config.js is set up to use the static-adapter.
+
+```bash
+npm run build
+```
+
+then uses the `/docs` directory as defined by the config for the output.
+GitHub pages is set up to use said `/docs` to host the site.
